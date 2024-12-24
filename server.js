@@ -76,7 +76,3 @@ app.delete("/usuarios/:id", async (request, response) => {
 app.listen(3000, () => {
     console.log("Servidor rodando na porta 3000");
 });
-
-// johnatang3
-// johnatan1303
-// mongodb+srv://johnatang3:<db_password>@users.jhywwlg.mongodb.net/?retryWrites=true&w=majority&appName=Users

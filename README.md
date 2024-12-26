@@ -65,7 +65,7 @@ Este repositório contém um projeto básico de CRUD (Create, Read, Update, Dele
               "name": "João",
               "email": "joao@email.com",
               "age": 25
-          }
+            }
   3. Atualizar Usuário
     PUT /usuarios/:id
     Descrição: Atualiza um usuário existente.
@@ -80,6 +80,11 @@ Este repositório contém um projeto básico de CRUD (Create, Read, Update, Dele
   4. Deletar Usuário
     DELETE /usuarios/:id
     Descrição: Remove um usuário do banco de dados.
+
+## 🔄 Middleware cors()
+
+Este projeto utiliza o middleware cors() para habilitar o Cross-Origin Resource Sharing. Esta configuração permite que o servidor aceite requisições de qualquer origem. Como este projeto é apenas para aprendizado, o CORS está configurado de forma aberta.
+Nota: Em um ambiente de produção, é altamente recomendável restringir as origens confiáveis para maior segurança.
 
 ## 📝 Observações
 

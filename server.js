@@ -8,12 +8,18 @@
 
 import express from "express";
 import { PrismaClient } from '@prisma/client'
+import cors from 'cors'
 
 const prisma = new PrismaClient()
 const app = express();
 
 // Middleware para interpretar JSON no corpo da requisição (necessário para Body Params)
 app.use(express.json()); 
+
+// Habilita o CORS (Cross-Origin Resource Sharing) para permitir que o servidor aceite requisições de qualquer origem.
+// Como este projeto é para aprendizado, a configuração de CORS está aberta, permitindo requisições de todas as origens.
+// Nota: Em um ambiente de produção, é recomendável restringir as origens confiáveis.
+app.use(cors());
 
 // Rota para listar usuários com Query Params
 // Query Params são utilizados para filtrar ou especificar informações.
